@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body id="body">
+    <div class="head">
+        <h1 class="h">JavaScript: от теории к практике</h1>
+    </div>
+    <ul class="list">
+        <a href="#block1"><li>Что такое JavaScript?</li></a>
+        <a href="#block2"><li>Для чего нужен JavaScript</li></a>
+        <a href="#block3"><li>Области применения JavaScript</li></a>
+        <a href="#block4" id="block1"><li>Где не нужно применять JavaScript</li></a>
+        <a href="#block5"><li>Задачи</li></a>
+    </ul>
+    <div class="display-blocks">
+        <div id="block2" class="group">
+            <h1>Что такое JavaScript</h1>
+            <p>JavaScript — это язык программирования, который в первую очередь применяют в вебе. С его<br> помощью сайты делают интерактивными: добавляют всплывающие окна, анимацию, кнопки<br> лайков и формы для отправки информации. Его ещё называют главным языком фронтенда —<br> «лицевой» стороны сайта, с которой взаимодействуют пользователи.</p>
+        </div>
+        <div class="group">
+            <h1>Для чего нужен JavaScript</h1>
+            <ul class="list-block">
+                <li class="t">Сделать сайт интерактивным — чтобы это была не просто статичная страница, а динамичная<br> программа, реагирующая на действие пользователей. Например, если нажать кнопку «Нравится»<br> и число лайков на записи увеличивается сразу, без обновления страницы. Это результат<br> использования JavaScript.</li>
+                <li class="t">Передавать информацию между пользователем и сервером. Именно скрипты, написанные на<br> JavaScript, отправляют на сервер информацию, которую ввёл пользователь.</li>
+                <li class="t">Анимировать объекты — добавить скролл до раздела по нажатию кнопки, анимацию фона,<br> движущиеся объекты.</li>
+                <li id="block3" class="t">Производить вычисления. Например, в онлайн-калькуляторе на сайте. Это можно делать как<br> на стороне сервера, так и в самом браузере с помощью возможностей JavaScript.</li>
+                <li class="t">Писать серверную часть сайта или приложения.</li>
+            </ul>
+        </div>
+        <div class="group">
+            <h1>Области применения JavaScript</h1>
+            <ul class="list-block delete">
+                <li id="t" class="t">Веб-сайты и веб-приложения. Самая популярная область применения языка JavaScript — это<br> написание кода для сайта. Практически на каждом современном сайте используют код,<br> написанный на JS.</li>
+                <li class="t">Расширения для браузера. Небольшие простые скрипты, которые добавляют дополнительный<br> функционал — блокируют рекламу, позволяют сохранять аудио, отправляют уведомления о<br> новых письмах или меняют цветовую схему сайта.</li>
+                <li class="t">Мобильные приложения. Их можно писать на специальных языках, например Kotlin. Но если<br> нужно что-то простое, например интерфейс для работы с облачным хранилищем, его можно<br> написать на JavaScript и собрать в приложение с помощью специальных инструментов.</li>
+                <li id="block4" class="t">Серверная часть сайтов и программ. Язык программирования JavaScript можно использовать<br> для написания любых сервисов: чатов, компьютерных программ и даже нейросетей. Для этого к<br> нему нужно подключить движок Node.js. </li>
+                <li class="t">Игры. На JS можно писать несложные браузерные игры.</li>
+            </ul>
+        </div>
+        <div class="group">
+            <h1>Где не нужно применять JavaScript</h1>
+            <ol class="list-block">
+                <li class="t">Машинное обучение</li>
+                <li class="t">Робототехника</li>
+                <li id="block5" class="t">Разработка игр</li>
+            </ol>
+        </div>
+    </div>
+    <button id="auth">Авторизироваться</button>
+    <button id="image-theme" onclick="theme()">Смена фона</button>
+    <h1 class="title">Задачи</h1>
+    <div class="display-code">
+    <div class="block1">
+        <h1 class="title-code">Название</h1>
+        <p class="text-code">Описание</p>
+    </div>
+    <div class="block2">
+        <textarea id="textar" class="area">dvrbeb</textarea>
+        <div style="display: flex; gap: 10px; justify-content: space-between;">
+            <button id="back" class="start-code">Назад</button>
+            <button id="start-code" class="start-code-page">Вперёд</button>
+        </div>
+    </div>
+    </div>
+    <div class="quiz">
+        <h1 class="title te">Тест</h1>
+        <div class="questions"></div>
+        <ul class="answer"></ul>
+        <div id="otveti" style="display: none; gap: 20px; font-size: 23px; justify-content: center; padding-top: 50px; align-items: center;">
+            <h3>Правильные:</h1>
+            <p>console.log</p>
+            <p>function</p>
+            <p>alert</p>
+            <p>sort</p>
+            <p>push</p>
+            <p>for</p>
+            <p>toLowerCase()</p>
+            <p>//</p>
+            <p>getElementByID</p>
+            <p>%</p>
+        </div>
+        <div id="otveti2" style="display: none; gap: 20px; font-size: 23px; justify-content: center; padding-top: 50px; align-items: center;">
+            <h3>Твои ответы:</h3>
+            <div style="display: flex; gap: 30px" class="otveti">
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal" onclick="closed()">
+        <div class="modal-content">
+            <p class="result-modal"></p>
+        </div>
+    </div>
+</body>
+</html>
